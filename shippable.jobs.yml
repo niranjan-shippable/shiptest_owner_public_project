@@ -4,4 +4,5 @@ jobs:
     steps:
       - IN: dv-params-1
       - TASK:
+        - script: printenv
         - script: sleep 1200
