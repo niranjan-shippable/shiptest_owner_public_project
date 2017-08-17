@@ -11,6 +11,7 @@ jobs:
         - script: eb --version
         - script: packer --version
         - script: echo "before azure"
+        - script: apt search azure-cli
         - script: az --version
         - script: echo "after azure"
         - script: yarn --version
