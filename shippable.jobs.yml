@@ -9,7 +9,7 @@ jobs:
         - script: jfrog --version
         - script: gcloud --version
         - script: eb --version
-        - script: packer --version
+        - script: packer --version || true
         - script: echo "before azure"
         - script: apt search azure-cli
         - script: az --version
