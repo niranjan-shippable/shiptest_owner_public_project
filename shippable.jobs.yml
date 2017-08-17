@@ -5,7 +5,7 @@ jobs:
       - IN: dv-params-1
       - TASK:
         - script: terraform --version
-        - script: kubectl version
+        - script: kubectl version || true
         - script: jfrog --version
         - script: gcloud --version
         - script: eb --version
