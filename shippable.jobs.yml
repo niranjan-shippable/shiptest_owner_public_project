@@ -23,6 +23,6 @@ jobs:
         - script: echo "********* yarn version ********"
         - script: yarn --version
         - script: mkdir test_yarn && cd test_yarn
-        - script: yarn init && yarn add loadash && yarn install
+        - script: yarn && yarn add loadash && yarn install
         
         
