@@ -4,6 +4,13 @@ jobs:
     steps:
       - IN: dv-params-1
       - TASK:
-        - script: printenv
-        - script: cat $META/integration.json
-        - script: shipctl get_json_value $META/integration.json
+        - script: terraform --version
+        - script: kubectl version
+        - script: jfrog --version
+        - script: gcloud --version
+        - script: eb --version
+        - script: packer --version
+        - script: az --version
+        - script: yarn --version
+        
+        
