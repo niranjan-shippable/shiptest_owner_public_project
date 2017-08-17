@@ -10,7 +10,9 @@ jobs:
         - script: gcloud --version
         - script: eb --version
         - script: packer --version
+        - script: echo "before azure"
         - script: az --version
+        - script: echo "after azure"
         - script: yarn --version
         
         
